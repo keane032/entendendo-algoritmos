@@ -2,7 +2,7 @@ def pesquisa_binaria(lista, item):
     baixo = 0 #baixo e alto acompanham a parte da lista que voce esta procurando
     alto = len(lista) - 1 #
     while baixo <= alto: # enquanto não conseguiu achar o elemento
-        meio = (baixo + alto) / 2 # vericfica o elemento central
+        meio = int((baixo + alto)/2) # vericfica o elemento central
         chute = lista[meio]
         if chute == item: # acha o item 
             return meio
